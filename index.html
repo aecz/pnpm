@@ -122,19 +122,27 @@ See <a href="store-layout.html">store layout</a> for an explanation.</p>
 .
 &#x2514;&#x2500; node_modules/
    &#x251C;&#x2500; .resolutions/
-   |   &#x251C;&#x2500; chalk/1.1.1/node_modules/chalk/
+   |   &#x251C;&#x2500; chalk/1.1.1/
    |   |  &#x251C;&#x2500; node_modules/
-   |   |  |  &#x251C;&#x2500; ansi-styles/ -&gt; ../../ansi-styles/2.1.0/node_modules/ansi-styles/
-   |   |  |  &#x2514;&#x2500; has-ansi/    -&gt; ../../has-ansi/2.0.0/node_modules/has-ansi/
-   |   |  &#x251C;&#x2500; index.js        =&gt; ~/.pnpm-store/chalk/1.1.1/index.js
-   |   |  &#x2514;&#x2500; package.json    =&gt; ~/.pnpm-store/chalk/1.1.1/package.json
-   |   &#x251C;&#x2500; has-ansi/2.0.0/node_modules/has-ansi/
-   |   |  &#x251C;&#x2500; index.js        =&gt; ~/.pnpm-store/has-ansi/2.0.0/index.js
-   |   |  &#x2514;&#x2500; package.js      =&gt; ~/.pnpm-store/has-ansi/2.0.0/package.json
-   |   &#x2514;&#x2500; ansi-styles/2.1.0/node_modules/ansi-styles/
-   |      &#x251C;&#x2500; index.js        =&gt; ~/.pnpm-store/ansi-styles/2.1.0/index.js
-   |      &#x2514;&#x2500; package.js      =&gt; ~/.pnpm-store/ansi-styles/2.1.0/package.json
-   &#x2514;&#x2500; chalk/                 -&gt; ./.resolutions/chalk/1.1.1/node_modules/chalk/
+   |   |  |  &#x251C;&#x2500; chalk        -&gt; ../package
+   |   |  |  &#x251C;&#x2500; ansi-styles/ -&gt; ../../ansi-styles/2.1.0/package
+   |   |  |  &#x2514;&#x2500; has-ansi/    -&gt; ../../has-ansi/2.0.0/package
+   |   |  &#x2514;&#x2500; package
+   |   |     &#x251C;&#x2500; index.js     =&gt; ~/.pnpm-store/chalk/1.1.1/index.js
+   |   |     &#x2514;&#x2500; package.json =&gt; ~/.pnpm-store/chalk/1.1.1/package.json
+   |   &#x251C;&#x2500; has-ansi/2.0.0/
+   |   |  &#x251C;&#x2500; node_modules/
+   |   |  |  &#x2514;&#x2500; has-ansi     -&gt; ../package
+   |   |  &#x2514;&#x2500; package
+   |   |     &#x251C;&#x2500; index.js     =&gt; ~/.pnpm-store/has-ansi/2.0.0/index.js
+   |   |     &#x2514;&#x2500; package.js   =&gt; ~/.pnpm-store/has-ansi/2.0.0/package.json
+   |   &#x2514;&#x2500; ansi-styles/2.1.0/
+   |      &#x251C;&#x2500; node_modules/
+   |      |  &#x2514;&#x2500; ansi-styles  -&gt; ../package
+   |      &#x2514;&#x2500; package
+   |         &#x251C;&#x2500; index.js     =&gt; ~/.pnpm-store/ansi-styles/2.1.0/index.js
+   |         &#x2514;&#x2500; package.js   =&gt; ~/.pnpm-store/ansi-styles/2.1.0/package.json
+   &#x2514;&#x2500; chalk/                 -&gt; ./.resolutions/chalk/1.1.1/package
 </code></pre>
 <h2 id="install">Install</h2>
 <p>Install it via npm.</p>
