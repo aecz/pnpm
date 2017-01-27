@@ -2,7 +2,7 @@ import tape = require('tape')
 import promisifyTape from 'tape-promise'
 const test = promisifyTape(tape)
 import path = require('path')
-import {installPkgs, prune, prunePkgs} from '../src'
+import {installPkgs, prune, prunePkgs} from 'pnpm'
 import prepare from './support/prepare'
 import exists = require('exists-file')
 import existsSymlink = require('exists-link')

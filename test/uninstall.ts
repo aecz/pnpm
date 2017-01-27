@@ -7,7 +7,7 @@ import exists = require('exists-file')
 import existsSymlink = require('exists-link')
 import prepare from './support/prepare'
 import testDefaults from './support/testDefaults'
-import {installPkgs, uninstall} from '../src'
+import {installPkgs, uninstall} from 'pnpm'
 
 test('uninstall package with no dependencies', async function (t) {
   const project = prepare(t)

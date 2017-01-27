@@ -1,4 +1,4 @@
-import {cleanCache, installPkgs, install} from '../src'
+import {cleanCache, installPkgs, install} from 'pnpm'
 import {add as addDistTag} from './support/distTags'
 import testDefaults from './support/testDefaults'
 import tape = require('tape')

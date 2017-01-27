@@ -4,7 +4,7 @@ import path = require('path')
 import {stripIndent} from 'common-tags'
 import {Test} from 'tape'
 import exists = require('exists-file')
-import {Modules, read as readModules} from '../../src/fs/modulesController'
+import {Modules, read as readModules} from 'pnpm/lib/fs/modulesController'
 import isExecutable from './isExecutable'
 
 const root = process.cwd()

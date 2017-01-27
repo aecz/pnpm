@@ -14,7 +14,7 @@ import {add as addDistTag} from './support/distTags'
 import prepare from './support/prepare'
 import loadJsonFile = require('load-json-file')
 const basicPackageJson = loadJsonFile.sync(path.join(__dirname, './support/simple-package.json'))
-import {install, installPkgs, uninstall} from '../src'
+import {install, installPkgs, uninstall} from 'pnpm'
 import testDefaults from './support/testDefaults'
 import exists = require('exists-file')
 import {pathToLocalPkg, local} from './support/localPkg'

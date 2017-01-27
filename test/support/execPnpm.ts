@@ -1,10 +1,8 @@
-import path = require('path')
 import crossSpawn = require('cross-spawn')
 import loadJsonFile = require('load-json-file')
 
-const pkgRoot = path.join(__dirname, '..', '..')
-const pnpmPkg = loadJsonFile.sync(path.join(pkgRoot, 'package.json'))
-const pnpmBin = path.join(pkgRoot, pnpmPkg.bin.pnpm)
+const pnpmPkg = loadJsonFile.sync(require.resolve('pnpm/package.json'))
+const pnpmBin = require.resolve(`pnpm/${pnpmPkg.bin.pnpm}`)
 
 export default function (...args: string[]): Promise<void>
 export default async function () {

@@ -153,7 +153,7 @@
     "?release": "echo 'Publish pnpm'",
     "release": "sh .scripts/release.sh",
     "tsc": "rimraf lib && tsc",
-    "prepublish": "in-publish && echo 'You need to use \"npm run release\" to publish pnpm' && false || npm run tsc"
+    "prepublish": "in-publish && echo 'You need to use \"npm run release\" to publish pnpm' && false || symlink-dir . node_modules/pnpm && npm run tsc"
   },
   "config": {
     "commitizen": {

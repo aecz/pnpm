@@ -13,7 +13,7 @@ import {
   linkToGlobal,
   linkFromGlobal,
   installPkgs
-} from '../src'
+} from 'pnpm'
 import {pathToLocalPkg} from './support/localPkg'
 import testDefaults from './support/testDefaults'
 
